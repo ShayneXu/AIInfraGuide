@@ -140,6 +140,7 @@ AIInfraGuide 正是为了解决这些问题而创建的——一个**开源、�
 | 6.1 | [FlashAttention V1详解](https://caomaolufei.github.io/AIInfraGuide/cuda/模块二-cuda编程与算子优化/61-flashattention-v1详解) | 本文深入剖析 FlashAttention V1 的核心原理与实现细节，理解如何通过 Tiling + Online Softmax 将 Attention 的额外显存占用从 $O(N^2)$ 降至 $O(N)$，同时大幅减少 HBM 访问量，实现无精度损失的加速 |
 | 6.2 | [FlashAttention V2详解](https://caomaolufei.github.io/AIInfraGuide/cuda/模块二-cuda编程与算子优化/62-flashattention-v2详解) | 本文深入剖析 FlashAttention V2 相比 V1 的核心改进：调换内外循环顺序、优化线程块内的工作分配、减少非矩阵乘运算 |
 | 第 7 章| AI 编译器 | Triton、torch.compile、TVM/XLA 概述 |
+| 7.1| [Triton 编程模型](https://caomaolufei.github.io/AIInfraGuide/cuda/模块二-cuda编程与算子优化/71-triton编程框架)  | 分析 Triton 的编程模型，并结合 Softmax 算子实现介绍了 Triton 基础语法 |
 | 第 8 章| 性能分析工具链 | Nsight Systems/Compute、PyTorch Profiler |
 
 
